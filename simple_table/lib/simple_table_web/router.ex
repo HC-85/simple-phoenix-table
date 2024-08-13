@@ -19,6 +19,8 @@ defmodule SimpleTableWeb.Router do
 
     get "/", PageController, :home
     live "/users", UserLive.Index, :index
+    live "/users/:id/edit", UserLive.Index, :edit
+    live "/users/new", UserLive.Index, :new
   end
 
   # Other scopes may use custom stacks.
