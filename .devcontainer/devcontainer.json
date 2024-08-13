@@ -1,5 +1,14 @@
 {
+    "name": "Simple Phoenix Table",
     "build": {
         "dockerfile": "Dockerfile"
+    },
+    "extensions": [
+        "elixir-lsp.elixir-ls", // elixir-ls does NOT work for some reason
+        "vscode-elixir.elixir"
+    ],
+    "settings": {
+        "elixirLS.dialyzerEnabled": true,
+        "elixirLS.telemetryEnabled": true
     }
 }
