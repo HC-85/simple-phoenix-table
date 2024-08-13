@@ -1,3 +1,8 @@
 mix local.hex
 mix phx.new simple-table
 mix deps.get
+mix ecto.create
+mix phx.gen.schema User users name:string age:integer
+mix phx.gen.html Accounts User users name:string age:integer
+mix phx.gen.live Accounts User users name:string age:integer
+mix ecto.migrate

@@ -5,7 +5,8 @@
     },
     "extensions": [
         "elixir-lsp.elixir-ls", // elixir-ls does NOT work for some reason
-        "vscode-elixir.elixir"
+        "vscode-elixir.elixir",
+        "phoenixframework.phoenix"
     ],
     "settings": {
         "elixirLS.dialyzerEnabled": true,

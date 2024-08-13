@@ -2,12 +2,8 @@ import Config
 
 # Configure your database
 config :simple_table, SimpleTable.Repo,
-  username: "postgres",
-  password: "postgres",
-  hostname: "localhost",
-  database: "simple_table_dev",
-  stacktrace: true,
-  show_sensitive_data_on_connection_error: true,
+  adapter: Ecto.Adapters.SQLite3,
+  database: "priv/repo/dev.sqlite3",
   pool_size: 10
 
 # For development, we disable any cache and enable

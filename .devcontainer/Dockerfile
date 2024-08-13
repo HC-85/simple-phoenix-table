@@ -2,4 +2,7 @@
 
 ARG ELIXIR_VER=1.17.2
 FROM elixir:${ELIXIR_VER}-alpine
-RUN apk upgrade && apk add --no-cache git
+RUN apk upgrade && \
+    apk add --no-cache git && \
+    apk add --no-cache sqlite
+
